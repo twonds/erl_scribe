@@ -15,6 +15,9 @@ function_info(getStatus, params_type) ->
 function_info(getName, params_type) ->
     {struct, []};
 
+function_info(log, params_type) ->
+    {struct, [#logEntry{}]};
+
 function_info(_Name, _ParamsType) ->
     %% unhandled function info call
     undef.
