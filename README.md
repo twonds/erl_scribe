@@ -1,11 +1,11 @@
-= Erlang Scribe Logger =
+<h1> Erlang Scribe Logger </h1>
 
 There seems to be a good deal scribe examples and code for php and python. 
 However, I could not find much on erlang and scribe. This is an example on how to 
 start logging to scribe with erlang. This example is a client thrift connection to a 
 local scribe server.
 
-== Install Software needed. ==
+<h2> Install Software needed. </h2>
 
 You will need to install boost, thrift, and scribe.
 
@@ -15,12 +15,12 @@ Thrift - http://incubator.apache.org/thrift/
 
 Scribe - http://github.com/facebook/scribe
 
-= Steps =
+<h1> Steps </h1>
 
 NOTE: These steps are in the Makefile. You could also just type `make` and then install the
 compiled beams wherever needed.
 
-== Generate code with thrift ==
+<h2> Generate code with thrift </h2>
 
 You will then need to generate the facebook scribe code.
 
