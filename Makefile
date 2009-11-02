@@ -24,7 +24,8 @@ RM 	= /bin/rm -rf
 all:
 	thrift --gen erl scribe.thrift
 	cp example.erl gen-erl
-	erlc gen-erl/*.erl
+	erlc -o ebin gen-erl/*.erl
 
 clean:
 	-$(RM) gen-erl
+	-$(RM) ebin/*
