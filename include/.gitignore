@@ -1,3 +1,7 @@
 *.~*
 *.beam
 *.old
+facebookService_thrift.hrl
+scribe_constants.hrl
+scribe_thrift.hrl
+scribe_types.hrl
