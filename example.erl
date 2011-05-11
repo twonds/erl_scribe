@@ -6,9 +6,11 @@
 -include("scribe_types.hrl").
 
 run() ->
-    {ok, C} = thrift_client:start_link("localhost", 1463, scribe_thrift, [{strict_read, false}, 
-									  {strict_write, false}, 
-									  {framed, true}]),
+    {ok, C} = thrift_client_util:new("localhost", 1463, scribe_thrift,
+                       [{strict_read, false}, 
+                        {strict_write, false}, 
+                        {framed, true}]),
+
 
     io:format("Connected ~p~n", [C]),
     
